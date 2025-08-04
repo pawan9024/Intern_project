@@ -22,7 +22,7 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('/api/auth/register', formData);
+            await axios.post(`${process.env.REACT_APP_API_URL}/api/auth/register`, formData);
             toast.success('Registration successful! Please login.');
             setTimeout(() => history.push('/login'), 1500);
         } catch (err) {

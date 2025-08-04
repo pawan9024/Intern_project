@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "proxy": "http://localhost:5000",
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+ "scripts": {
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject",
+  "postinstall": "chmod +x node_modules/.bin/react-scripts || true"
+},
   "dependencies": {
     "axios": "^0.21.1",
     "jwt-decode": "^4.0.0",
